@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Array of Disc Brands</h1>
+
+<p id="tag"></p>
+
+<script>
+let discs = ["Innova", "Discraft", "MVP", "Dynamic Discs", "Prodigy",];
+discs[1] = "Latitude 64";
+discs[4] = "Discraft";
+discs.unshift("Westside Discs");
+discs.pop();
+console.log(discs);
+document.getElementById("tag").innerHTML = discs;
+</script>
+
+</body>
+</html>
