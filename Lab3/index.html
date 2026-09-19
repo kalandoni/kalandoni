@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device
+width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        .container { display: flex; min-height: 
+100vh; align-items: stretch; }
+        .column { background: rgb(244, 243, 242); display: 
+flex; flex-direction: column; justify-content: 
+center; align-items: center; flex: 1; }
+        .testbtn {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.altbtn {
+  background-color: #aa2804;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            <p id="P1">Click button</p>
+            <button type="button" class="testbtn" onclick="myFunction()">Change Me</button>
+        <script>
+function myFunction() { 
+  document.getElementById("heading1").innerHTML = "Goodbye";
+  document.getElementById("P1").innerHTML = "You clicked the button";
+}
+</script>
+            <img src="Space1.jpg" alt="Space Image" width="300" border="5">
+        </div>
+       
+        <div class="column" id="column2">
+            <h1 id="heading2">World</h1>
+            <p id="P2">Do not click button</p>
+            <button type="button" class="altbtn" onclick="myFunction2()">Change Me</button>
+        <script>
+            function myFunction2() { 
+                document.getElementById("heading2").innerHTML = "Goodbye";
+                document.getElementById("P2").innerHTML = "Told you not to click the button";
+            }
+        </script>
+            <img src="Space2.jpg" alt="Space Image" width="300" border="5">
+        </div>
+    </div>
+</body>
+</html
