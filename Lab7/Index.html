@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        h1 { border: 5px solid black; padding: 10px; }
+        
+    </style>
+<h1>Multiplication Function</h1>
+<p>This function performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function multiply(a, b) {
+  return a * b;
+}
+
+let result = multiply(4, 3);
+
+document.getElementById("demo").innerHTML = "The product is " + result;
+
+</script>
+
+<script>
+
+<!-- Tests for the multiply function -->
+
+if(multiply(4,3)!=12){
+throw error
+}
+
+if(multiply(4,3)==0){
+    throw error
+}
+if(multiply(4,3)=-5){
+    throw error
+}
+</script>
+
+<!-- make sure each function is clearly separated and has its own heading and description. -->
+
+<h1>Addition Function</h1>
+<p>This function performs an addition and returns the result:</p>
+
+<p id="math"></p>
+
+<script>
+function sum(a, b) {
+  return a + b;
+}
+
+let total = sum(4, 3);
+
+document.getElementById("math").innerHTML = "The sum is " + total;
+</script>
+
+<script>
+<!-- Tests for the sum function -->    
+    
+if(sum(4,3)!=7){
+    throw error
+}
+if(sum(4,3)==5){
+    throw error
+}
+If(sum(4,3)<5){
+    throw error
+}
+    
+</script>
+
+<!-- Change your function names and descriptions for each function -->
+
+<h1>Subtraction Function</h1>
+<p>This function performs a subtraction and returns the result:</p>
+
+<p id="sub"></p>
+
+<script>
+function subtract(a, b) {
+  return a - b;
+}
+
+let complete = subtract(4, 3);
+
+document.getElementById("sub").innerHTML = "The difference is " + complete;
+</script>
+
+<script>
+<!-- Tests for the subtract function -->
+if(subtract(4,3)!=1){
+    throw error
+}
+if(subtract(4,3)==8){
+    throw error
+}
+if(subtract(4,3)<0){
+    throw error
+}
+
+</script>
+
+<!-- Every Header should have a border for better readability -->
+
+<h1>Division Function</h1>
+<p>This function performs a division and returns the result:</p>
+
+<p id="divide"></p>
+
+<script>
+function divide(a, b) {
+  return a / b;
+}
+
+let whole = divide(4, 3);
+
+document.getElementById("divide").innerHTML = "The quotient is " + whole;
+</script>
+
+<script>
+<!-- Tests for the divide function -->
+if(divide(4,3)!=1.3333333333333333){
+    throw error
+}
+if(divide(4,3)<=0){
+    throw error
+}
+if(divide(4,3)<-1){
+    throw error
+}
+
+</script>
+
+<!-- Make the Order of the Functions: Multiplication, Addition, Subtraction, Division, Name -->
+
+<h1>Name Function</h1>
+<p>This function performs an addition and prints the result:</p>
+
+<p id="name"></p>
+
+<script>
+
+let full = ("Steve Smith");
+
+document.getElementById("name").innerHTML = "Hello, " + full;
+</script>
+
+<script>
+<!-- Tests for the name function -->
+if(full!="Steve Smith"){
+    throw error
+}
+if(full=="John Doe"){
+    throw error
+}
+if(full=="Smith, Steve"){
+    throw error
+}
+
+<!-- Double check function name spelling-->
+</script>
+</body>
+</html>
