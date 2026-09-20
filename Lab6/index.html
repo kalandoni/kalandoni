@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JSON Lab 6</title>
+</head>
+<body>
+<h1>JSON Lab 6</h1>
+<p>This is book information about The Lord of the Rings.</p>
+<p id="book-title"></p>
+<p id="characters"></p>
+<script>
+
+const user = {
+    "title": "The Lord of the Rings; the Fellowship of the Ring",
+    "author": "J.R.R. Tolkein",
+    "year": 1954,
+    "pages": 506,
+    "description": "The Lord of the Rings is an epic high-fantasy novel written by English author and scholar J.R.R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. It was written in stages between 1937 and 1949, much of it during World War II. It is the second-best-selling novel ever written, with over 150 million copies sold."
+}
+document.getElementById("book-title").innerHTML = user["title"];
+console.log(user["author"]);
+console.log(user["title"]);
+console.log(user["year"]);
+user["description"] = "The Lord of the Rings is one of my favorite books of all time. It is a classic work of literature that has stood the test of time and continues to captivate readers of all ages.";
+
+let characters = ["Frodo Baggins", "Samwise Gamgee", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir", "Meriadoc Brandybuck", "Peregrin Took"];
+document.getElementById("characters").innerHTML = "Characters: " + characters.join(", ");
+</script>
+
+</body>
+</html>
+
