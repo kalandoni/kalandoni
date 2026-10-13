@@ -13,6 +13,7 @@ html, body {
   height: 100%;  
 }
 
+
 .debug {
   background: rgba(0, 0, 0, 0.2) !important;
 }
@@ -27,7 +28,7 @@ body {
 header {
   background-color: none;
   margin: 0;
-  padding: 200px;
+  padding: 150px;
   text-align: center;
 }
 
@@ -38,10 +39,10 @@ header {
 
 .name {
   font-size: 200px;
-  background: linear-gradient(to right, #959595, #000000);
+  background: linear-gradient(to right, #c4c4c4, #242424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
 }
 
 .title {
@@ -62,7 +63,7 @@ header {
   flex-direction: row;
   align-items: stretch;
   height: 100%;
-  margin: 10px;
+  margin: 0px;
 }
 
 .fam {
@@ -72,17 +73,21 @@ header {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 91%;
-  padding: 20px;
+  height: 100%;
+  padding: 0px;
   border-radius: 50px;
   border: 5px solid black;
+  margin: 0px;
+  @media (min-width: 0) {
+    width: 30%;
+  }
 } 
 
 .about-content {
   background-color: rgba(255, 255, 255, 0.623);
   width: 80%;
-  height: 95%;
-  padding: 10px;
+  height: 100%;
+  padding: 0px 10px;
   border: 5px solid black;
   font-size: 35px;
   border-radius: 50px;
@@ -93,13 +98,15 @@ header {
   flex-direction: row;
   align-items: stretch;
   height: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .goal-content {
   background-color: rgba(179, 243, 253, 0.623);
   width: 80%;
-  height: 92%;
-  padding: 10px;
+  height: 100%;
+  padding: 0px 10px;
   border: 5px solid black;
   font-size: 35px;
   border-radius: 50px;
@@ -112,10 +119,13 @@ header {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 88%;
-  padding: 20px;
+  height: 100%;
+  padding: 0px;
   border: 5px solid black;
   border-radius: 50px;
+  @media (min-width: 0) {
+    width: 30%;
+  }
 }
 
 .content-container3 {
@@ -123,13 +133,13 @@ header {
   flex-direction: row;
   align-items: stretch;
   height: 100%;
+  margin: 5px;
 }
 
 .resume-content {
   background-color: rgba(255, 255, 178, 0.623);
   width: 100%;
-  height: 84%;
-  padding: 10px;
+  height: 100%;
   border: 5px solid black;
   font-size: 40px;
   border-radius: 50px;
@@ -149,8 +159,9 @@ header {
 .achievement-content {
   background-color: rgba(178, 255, 196, 0.623);
   width: 100%;
-  height: 90%;
-  padding: 10px;
+  height: 100%;
+  padding: 0px;
+  margin-top: 5px;
   border: 5px solid black;
   font-size: 35px;
   text-align: center;
@@ -177,7 +188,7 @@ ul {
     <section class="about-content">
       <h3>My Story</h3>
       <p>I am a Husband to a wonderful wife, and Father to one beautiful child. I was born and raised in a small town in Arizona while now raising my own family in that same town. Nothing quite compares to scenery of purple mountains against an orange sunset. </p>
-      <p>Most of my professional career, I have pushed myself to always step outside of my comfort zone when looking to pursue new opportunities. I pursue these opportunities with dedication and passion that drives me to succeed. </p>
+      <p>Most of my career, I have pushed myself to always step outside of my comfort zone when looking to pursue new opportunities. I pursue these opportunities with dedication and passion that drives me to succeed. </p>
     </section>
     </div>
 
