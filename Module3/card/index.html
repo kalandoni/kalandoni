@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e3f2fd;
+      }
+      .card {
+        padding: 10px;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 3em;
+        padding: 0 0 10px 0;
+      }
+      .card-description {
+        font-weight: 400;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+    crossorigin="anonymous"
+  />
+
+  <body>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+    <div id="card-list"></div>
+    <script>
+      function addCard() {
+        // clone the template
+        const template = document
+          .getElementById("card-template")
+          .content.cloneNode(true);
+        // populate the template
+        template.querySelector(".card-title").innerText = "My Card Title";
+        template.querySelector(".card-text").innerText = "lorem ipsum ble bla";
+        // include the populated template into the page
+        document.querySelector("#card-list").appendChild(template);
+      }
+      addCard();
+    </script>
+  </body>
+</html>
