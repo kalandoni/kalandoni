@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>News</h1>
+    <ul id="news-list"></ul>
+    <form id="news-form">
+      <input type="text" id="news-title" placeholder="Title" />
+      <input type="text" id="news-content" placeholder="Content" />
+      <button type="submit">Add News</button>
+    </form>
+    <script>
+      let news = [
+        {
+          id: 1,
+          title: "Election Results",
+          content: "Newly elected minister...",
+        },
+        { id: 2, title: "Sporting Success", content: "World Cup winners..." },
+        {
+          id: 3,
+          title: "Tornado Warning",
+          content: "Residents should prepare...",
+        },
+      ];
+      const form = document.getElementById("news-form");
+      const newsTitle = document.getElementById("news-title");
+      const newsContent = document.getElementById("news-content");
+      console.log(news);
+      news.forEach((item) => {
+        console.log(item.title);
+        const li = document.createElement("li");
+        li.textContent = item.title;
+        document.getElementById("news-list").appendChild(li);
+        li.textContent += " - " + item.content;
+        document.getElementById("news-list").appendChild(li);
+      });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const newNews = {
+          id: news.length + 1,
+          title: newsTitle.value,
+          content: newsContent.value,
+        };
+        news.push(newNews);
+        const li = document.createElement("li");
+        li.textContent = newNews.title + " - " + newNews.content;
+        document.getElementById("news-list").appendChild(li);
+        newsTitle.value = "";
+        newsContent.value = "";
+      });
+      setInterval(() => {
+        console.log((li.textContent += " - " + item.content));
+      }, 5000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e3f2fd;
+      }
+      .card {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #ffe26d;
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 3em;
+        padding: 0 0 10px 0;
+      }
+      .card-description {
+        font-weight: 400;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+    <div id="card-list"></div>
+    <script>
+            function addCard() {
+              const data = [
+                { name: "bob", age: 23 },
+                { name: "alice", age: 39 },
+              ];
+              data.forEach((item) => {
+                const template = document
+                  .getElementById("card-template")
+                  .content.cloneNode(true);
+
+                template.querySelector(".card-title").innerText = item.name;
+                template.querySelector(".card-text").innerText = `Age: ${item.age}`;
+
+                document.querySelector("#card-list").appendChild(template);
+              });
+           }
+          addCard();
+
+       
+    </script>
+  </bo//dy>
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Luxon DateTime Formatting</title>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/lu
+xon.min.js"></script>
+  </head>
+  <body>
+    <h2>Luxon Date Lab</h2>
+    <div id="displayLuxon"></div>
+    <script type="text/javascript">
+      (function () {
+        const DateTime = luxon.DateTime;
+        let nowLuxon = DateTime.now();
+        let eDisplayLuxon = document.getElementById("displayLuxon");
+        let formatted = nowLuxon.toFormat("MMMM dd, yyyy");
+        eDisplayLuxon.innerHTML += `<p>Formatted date:
+      ${formatted}</p>`;
+        const birthDate =
+          DateTime.fromISO("1993-06-28").setZone("America/Phoenix");
+        const birth = nowLuxon.diff(birthDate, "days").days;
+        eDisplayLuxon.innerHTML += `<p>1) Birth date in days:
+      ${Math.floor((birth / 365) * 12 * 30)}</p>`;
+        eDisplayLuxon.innerHTML += `<p>2) Birth date in years, months, and days:
+            ${Math.floor(birth / 365)} years, ${Math.floor((birth % 365) / 30)} months, and ${Math.floor(birth % 30)} days</p>`;
+        let d1 = DateTime.fromISO("2000-01-01").setZone("America/Phoenix");
+        let d2 = DateTime.fromISO("2010-01-01").setZone("America/Phoenix");
+        eDisplayLuxon.innerHTML += `<p>3) which date is closer to now: ${Math.abs(d1.diff(nowLuxon, "days").days) < Math.abs(d2.diff(nowLuxon, "days").days) ? "d1" : "d2"}</p>`;
+        eDisplayLuxon.innerHTML += `<p>4) which date is earlier: ${d1 < d2 ? "d1" : "d2"}</p>`;
+        let london = nowLuxon
+          .setZone("Europe/London")
+          .toLocaleString(DateTime.DATETIME_FULL);
+        eDisplayLuxon.innerHTML += `<p>5) London date:
+    ${london}</p>`;
+      })();
+    </script>
+  </body>
+</html>

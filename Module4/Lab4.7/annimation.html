@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Animation</title>
+    <style>
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 2px solid black;
+        text-align: center;
+        line-height: 100px;
+      }
+      p {
+        animation-name: slidedown;
+        animation-duration: 3s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+      }
+      @keyframes slidedown {
+        from {
+          margin-top: 0;
+          background-color: none;
+        }
+        50% {
+          margin-top: 50%;
+          background-color: blue;
+        }
+        to {
+          margin-top: 0;
+          background-color: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="square">Square</p>
+  </body>
+</html>
