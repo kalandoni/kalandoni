@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up box</title>
+    <style>
+      .title {
+        color: rgb(147, 252, 156);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.966);
+        -webkit-text-stroke: 1px #010101aa;
+        text-align: center;
+      }
+      .fill-in {
+        background-image: url("back.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #010101;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(202, 202, 202, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body class="fill-in">
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>

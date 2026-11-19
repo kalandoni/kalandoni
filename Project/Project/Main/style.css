@@ -1,0 +1,247 @@
+html {
+  background-image: url("stone.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #000000ac;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 0;
+  border-radius: 50px;
+}
+
+.dungeon {
+  color: #9d0101;
+  padding: 0px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.592);
+  margin: 0px;
+}
+
+#quick-guide {
+  font-size: 30px;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+#jump-link {
+  color: rgb(2, 98, 254);
+  text-decoration: underline;
+  margin: 100px;
+  font-size: 25px;
+}
+
+#layout {
+  display: flex;
+  background-color: none;
+}
+
+.box1 {
+  background-color: #ff7474ec;
+  border-radius: 20px;
+  min-width: 30%;
+  min-height: 50%;
+  margin: 5px;
+  border: 5px solid #000000;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.box2 {
+  background-color: #6ea0fce7;
+  border-radius: 20px;
+  min-width: 30%;
+  min-height: 50%;
+  margin: 5px;
+  border: 5px solid #000000;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.box3 {
+  background-color: #8de080ec;
+  border-radius: 20px;
+  min-width: 30%;
+  min-height: 50%;
+  margin: 5px;
+  border: 5px solid #000000;
+  padding: 15px;
+  font-size: 30px;
+}
+
+/* Character Sheet Layout */
+
+.box4 {
+  background-color: #fff7d5ec;
+  border-radius: 20px;
+  min-width: 50%;
+  min-height: 50%;
+  border: 5px solid #000000;
+  margin: 5px;
+  padding: 15px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.random-character-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffee00;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  width: 35%;
+  margin: 20px auto;
+}
+
+.character-selector {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#random-character-btn {
+  border: 2px solid #000000;
+  background: #eeeeee;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Character-Sheet {
+  background-color: #fffdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.character-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#character-name-box {
+  border: 2px solid #000000;
+  background: #eeeeee;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#layout2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+label {
+  padding: 20px;
+  width: fit-content;
+}
+
+select {
+  border: 2px solid #000000;
+  background: #eeeeee;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#random-character-stats {
+  border: 2px solid #000000;
+  background: #c801ffb4;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#random-stat-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  border: 2px solid #000000;
+  background: #eeeeee;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#stats {
+  border: 2px solid #000000;
+  background: #eeeeee;
+  padding: 7px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 10%;
+  height: 30px;
+}
+
+#dice {
+  background-color: #00000090;
+  width: 100%;
+  height: 100%;
+}
+
+#dice-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#dice-btn {
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid #010101;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 55px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 100px;
+  margin: 20px;
+}
+
+footer {
+  color: #fffdfd;
+  text-align: right;
+}
